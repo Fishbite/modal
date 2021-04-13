@@ -8,11 +8,13 @@ const modalOverlay = document.querySelector(".modal-overlay");
 const closeBtn = document.querySelector(".close-btn");
 
 modalBtn.addEventListener("click", function () {
-  console.log(modalBtn.classList);
+  console.log(modalOverlay.classList);
   modalOverlay.classList.add("open-modal");
+  console.log(modalOverlay.classList);
 });
 
 closeBtn.addEventListener("click", function () {
   console.log(closeBtn.classList);
   modalOverlay.classList.remove("open-modal");
+  console.log(modalOverlay.classList);
 });
